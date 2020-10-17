@@ -8,35 +8,37 @@
   	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/086e219237.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="font-family: 'Commissioner', sans-serif;">
 
 
 
-<nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 bg-white rounded ">
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 bg-white rounded sticky-top">
 	<div class="container">
-  <a class="navbar-brand text-danger font-weight-bold collapse navbar-collapse" id="navbardrop href="#"><i class="fab fa-airbnb text-danger"></i>airbnb</a>
+  <a class="navbar-brand text-danger font-weight-bold collapse navbar-collapse" id="navbardrop href="#"><i class="fab fa-airbnb fa-lg text-danger"></i>airbnb</a>
 
-
-  <button class="rounded-pill border bg-light border-light pl-3 pr-3 pt-2 pb-2 justify-content-center">
-    <span class="text-dark">Selected map area </span><span class="text-secondary"> |  Add dates  |  Add guess <span class="pl-1"><i class="fas fa-search rounded-circle text-light bg-danger" style="padding: 5px;"></i></span> </span>
-  </button>
-
+<div class="btn-group rounded-pill border" role="search">
+  <button type="button" class="btn border-right">Selected map area</button>
+  <button type="button" class="btn ">Add dates</button>
+  <button type="button" class="btn border-left">Add guess<span class="pl-1"><i class="fas fa-search rounded-circle text-light bg-danger" style="padding: 5px;"></i></span></button>
+</div>
 
   <div class="collapse navbar-collapse" id="navbardrop">
     <ul class="navbar-nav ml-auto align-middle">
 
       <li class="nav-item  mr-2">
-      <div class="bg-light rounded-pill" style="padding: .6rem .8rem; ">Become a host</div>
+      <div  style="padding: .6rem .8rem;font-size: 17px; ">Become a host</div>
       </li>
 
       <li class="nav-itemm mr-2">
-    <div class="rounded-pill border bg-light border-secondary pl-3 pr-3 pt-2 pb-2" type="button" data-toggle="collapse" data-target="#globe"><span class="border-0"><i class="fas fa-globe"></i><i class="fas fa-chevron-down"></i></span></div>
+    <div class="border-secondary pl-1 pr-3 pt-2 pb-2" type="button" data-toggle="collapse" data-target="#globe"><span class="border-0"><i class="fas fa-globe"></i><i class="fas fa-chevron-down"></i></span></div>
       </li>
 
       <li class="nav-item mr-2">
-     <div class="border rounded-pill" style="padding: .5rem .3rem"><i class="fas fa-bars text-secondary align-middle pr-3"></i><i class="fas fa-user-circle fa-2x text-secondary align-middle"></i></div>
+     <div class="border rounded-pill" style="padding: .3rem .5rem"><i class="fas fa-bars fa-md text-secondary align-middle pr-3	pl-1"></i><i class="fas fa-user-circle fa-2x text-secondary align-middle"></i></div>
       </li>
     </ul>
   </div>
@@ -45,105 +47,190 @@
 
 
 <section class="container">
-	<h6>20 pics</h6>
-	<h2>Luisito's Website</h2>
+	<h6>300+stays</h6>
+	<h2 class="font-weight-bold">Stay in selected map area</h2>
+
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" >filter</button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active rounded-pill border border-secondary mr-2">
+        <a class="nav-link" href="#">Cancellation flexibility</a>
+      </li>
+      <li class="nav-item rounded-pill border border-secondary mr-2">
+        <a class="nav-link" href="#">Type of place</a>
+      </li>
+      <li class="nav-item rounded-pill border border-secondary rounded-pill border border-secondary mr-2">
+        <a class="nav-link" href="#">Price</a>
+      </li>
+      <li class="nav-item rounded-pill border border-secondary rounded-pill border border-secondary mr-2">
+        <a class="nav-link" href="#">Instant Book</a>
+      </li>
+       <li class="nav-item rounded-pill border border-secondary rounded-pill border border-secondary mr-2">
+        <a class="nav-link" href="#">Instant Book</a>
+      </li>
+       <li class="nav-item rounded-pill border border-secondary rounded-pill border border-secondary mr-2">
+        <a class="nav-link" href="#">more filters</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
 	<p class="text-secondary">BSIT 3-1 Web Design Week 9</p>
 	<hr>
 </section>
 <section class="container text-center">
 	<div class="row">
-		<div class="col-lg-3 col-md-6 col-sm-12">
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph1.png">
 			<h2>Photo 1</h2>
 		</div>
-		<div class="col-lg-3 col-md-6 col-sm-12">
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph2.png">
 			<h2>Photo 2</h2>
 		</div>
-		<div class="col-lg-3 col-md-6 col-sm-12">
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph3.png">
 			<h2>Photo 3</h2>
 		</div>
-		<div class="col-lg-3 col-md-6 col-sm-12">
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph4.png">
 			<h2>Photo 4</h2>
 		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-3 col-md-6 col-sm-12">
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph5.png">
 			<h2>Photo 5</h2>
 		</div>
-		<div class="col-lg-3 col-md-6 col-sm-12">
+	</div>
+	<div class="row">
+		
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph6.png">
 			<h2>Photo 6</h2>
 		</div>
-		<div class="col-lg-3 col-md-6 col-sm-12">
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph7.png">
 			<h2>Photo 7</h2>
 		</div>
-		<div class="col-lg-3 col-md-6 col-sm-12">
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph8.png">
 			<h2>Photo 8</h2>
 		</div>
-	</div><div class="row">
-		<div class="col-lg-3 col-md-6 col-sm-12">
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph9.png">
 			<h2>Photo 9</h2>
 		</div>
-		<div class="col-lg-3 col-md-6 col-sm-12">
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph10.png">
 			<h2>Photo 10</h2>
 		</div>
-		<div class="col-lg-3 col-md-6 col-sm-12">
+	</div><div class="row">
+		
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph11.png">
 			<h2>Photo 11</h2>
 		</div>
-		<div class="col-lg-3 col-md-6 col-sm-12">
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph12.png">
 			<h2>Photo 12</h2>
 		</div>
-	</div><div class="row">
-		<div class="col-lg-3 col-md-6 col-sm-12">
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph13.png">
 			<h2>Photo 13</h2>
 		</div>
-		<div class="col-lg-3 col-md-6 col-sm-12">
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph14.png">
 			<h2>Photo 14</h2>
 		</div>
-		<div class="col-lg-3 col-md-6 col-sm-12">
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph15.png">
 			<h2>Photo 15</h2>
 		</div>
-		<div class="col-lg-3 col-md-6 col-sm-12">
+	</div><div class="row">
+		
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph16.png">
 			<h2>Photo 16</h2>
 		</div>
-	</div><div class="row">
-		<div class="col-lg-3 col-md-6 col-sm-12">
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph17.png">
 			<h2>Photo 17</h2>
 		</div>
-		<div class="col-lg-3 col-md-6 col-sm-12">
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph18.png">
 			<h2>Photo 18</h2>
 		</div>
-		<div class="col-lg-3 col-md-6 col-sm-12">
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph19.png">
 			<h2>Photo 19</h2>
 		</div>
-		<div class="col-lg-3 col-md-6 col-sm-12">
+		<div class="col-xl col-md-6 col-sm-12">
 			<img class="img-fluid" style="border-radius: 5%;" src="images/ph20.png">
 			<h2>Photo 20</h2>
 		</div>
-	</div>
 </section>
 
+<section class="container-fluid bg-light border-top">
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-2">
+			<h6 class="pt-5">ABOUT</h6>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">How Airbnb works</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Newsroom</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Airbnb Luxe</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Hotel Tonight</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Airbnb for Work</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Olympics</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Careers</a></div>
+		</div>
 
+		<div class="col-lg-1"></div>
+		<div class="col-lg-2">
+			<h6 class="pt-5">COMMUNITY</h6>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Diversity & Belongings</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Accessibility</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Airbnb Associates</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Frontline Stays</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Invite friends</a></div>
+		</div>
 
+		<div class="col-lg-1"></div>
+		<div class="col-lg-2">
+			<h6 class="pt-5">HOST</h6>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Host your home</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">
+Host an Online Experience</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Host an Experience</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Responsible hosting</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Open Homes</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Resource Centre</a></div>	
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Community Centre</a></div>		
+		</div>
 
-
-
+		<div class="col-lg-1"></div>
+		<div class="col-lg-2">
+			<h6 class="pt-5">SUPPORT</h6>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Updates for COVID-19</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Help Centre</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Cancellation options</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Neighbourhood Support</a></div>
+		<div class=" pb-2"><a class="text-decoration-none text-dark" style="font-size: 14px;" href="">Trust & Safety</a></div>
+		</div>
+	</div>
+	<hr>
+	 	<footer>
+    <div class="container-fluid">
+   
+    <span>© Copyright 2020 </span>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fas fa-envelope"></i>
+      </div>
+  </footer>
+</section>
 </body>
 </html>
